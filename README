@@ -1,0 +1,121 @@
+talkfilters 
+------------------------------------------- 
+The GNU Talk Filters are filter programs that convert ordinary English
+text into text that mimics a stereotyped or otherwise humorous dialect.
+These filters have been in the public domain for many years, but now for
+the first time they are provided as a single integrated package. Each
+program reads from standard input and writes to standard output. This
+version of the package also provides the filters as a C library, so they
+can be easily embedded in other programs.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+
+Build requirements:
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.93-1
+  flex-2.5.4a-4
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  make-3.80-1
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://www.hyperrealm.com/main.php?s=talkfilters
+
+-------------------------------------------
+
+Build instructions:
+  unpack talkfilters-2.3.5-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./talkfilters-2.3.5-1.cygport all
+
+This will create:
+  /usr/src/libtalkfilters1-2.3.5-1.tar.bz2
+  /usr/src/talkfilters-2.3.5-1-src.tar.bz2
+  /usr/src/talkfilters-2.3.5-1.tar.bz2
+  /usr/src/talkfilters-devel-2.3.5-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the main package:
+
+  /etc/postinstall/talkfilters.sh
+  /usr/bin/austro.exe
+  /usr/bin/b1ff.exe
+  /usr/bin/brooklyn.exe
+  /usr/bin/chef.exe
+  /usr/bin/cockney.exe
+  /usr/bin/drawl.exe
+  /usr/bin/dubya.exe
+  /usr/bin/fudd.exe
+  /usr/bin/funetak.exe
+  /usr/bin/jethro.exe
+  /usr/bin/jive.exe
+  /usr/bin/kraut.exe
+  /usr/bin/pansy.exe
+  /usr/bin/pirate.exe
+  /usr/bin/postmodern.exe
+  /usr/bin/redneck.exe
+  /usr/bin/valspeak.exe
+  /usr/bin/warez.exe
+  /usr/bin/wrap.exe
+  /usr/share/doc/Cygwin/talkfilters-2.3.5.README
+  /usr/share/doc/talkfilters-2.3.5/AUTHORS
+  /usr/share/doc/talkfilters-2.3.5/COPYING
+  /usr/share/doc/talkfilters-2.3.5/ChangeLog
+  /usr/share/doc/talkfilters-2.3.5/INSTALL
+  /usr/share/doc/talkfilters-2.3.5/README
+  /usr/share/info/talkfilters.info.gz
+  /usr/share/man/man1/austro.1.gz
+  /usr/share/man/man1/b1ff.1.gz
+  /usr/share/man/man1/brooklyn.1.gz
+  /usr/share/man/man1/chef.1.gz
+  /usr/share/man/man1/cockney.1.gz
+  /usr/share/man/man1/drawl.1.gz
+  /usr/share/man/man1/dubya.1.gz
+  /usr/share/man/man1/fudd.1.gz
+  /usr/share/man/man1/funetak.1.gz
+  /usr/share/man/man1/jethro.1.gz
+  /usr/share/man/man1/jive.1.gz
+  /usr/share/man/man1/kraut.1.gz
+  /usr/share/man/man1/pansy.1.gz
+  /usr/share/man/man1/pirate.1.gz
+  /usr/share/man/man1/postmodern.1.gz
+  /usr/share/man/man1/redneck.1.gz
+  /usr/share/man/man1/talkfilters.1.gz
+  /usr/share/man/man1/valspeak.1.gz
+  /usr/share/man/man1/warez.1.gz
+  /usr/share/man/man1/wrap.1.gz
+
+Files included in the runtime library package:
+
+  /usr/bin/cygtalkfilters-1.dll
+
+Files included in the devel package:
+
+  /usr/include/talkfilters.h
+  /usr/lib/libtalkfilters.a
+  /usr/lib/libtalkfilters.dll.a
+  /usr/lib/libtalkfilters.la
+  /usr/lib/pkgconfig/talkfilters.pc
+
+------------------
+
+Port Notes:
+
+----- version 2.3.5-1 -----
+Version bump.
+Created separate runtime library and devel packages.
+
+----- version 2.3.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

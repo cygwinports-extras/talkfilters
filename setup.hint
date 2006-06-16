@@ -1,0 +1,10 @@
+category: Text
+requires: cygwin
+sdesc: "Text filters which mimic various dialects"
+ldesc: "The GNU Talk Filters are filter programs that convert ordinary English
+text into text that mimics a stereotyped or otherwise humorous dialect.
+These filters have been in the public domain for many years, but now for
+the first time they are provided as a single integrated package. Each
+program reads from standard input and writes to standard output. This
+version of the package also provides the filters as a C library, so they
+can be easily embedded in other programs."
