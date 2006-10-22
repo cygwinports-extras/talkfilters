@@ -9,19 +9,19 @@ version of the package also provides the filters as a C library, so they
 can be easily embedded in other programs.
 
 Runtime requirements:
-  cygwin-1.5.19-4
+  cygwin-1.5.21-2
 
 Build requirements:
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.21-2
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.1.93-1
-  flex-2.5.4a-4
+  binutils-20060817-1
+  cygport-0.2.5-1
+  flex-2.5.33-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  make-3.80-1
-  sed-4.1.4-1
+  make-3.81-1
+  sed-4.1.5-1
 
 Canonical homepage:
   http://www.hyperrealm.com/main.php?s=talkfilters
@@ -29,17 +29,17 @@ Canonical homepage:
 -------------------------------------------
 
 Build instructions:
-  unpack talkfilters-2.3.5-1-src.tar.bz2
+  unpack talkfilters-2.3.6-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./talkfilters-2.3.5-1.cygport all
+  cygport ./talkfilters-2.3.6-1.cygport all
 
 This will create:
-  /usr/src/libtalkfilters1-2.3.5-1.tar.bz2
-  /usr/src/talkfilters-2.3.5-1-src.tar.bz2
-  /usr/src/talkfilters-2.3.5-1.tar.bz2
-  /usr/src/talkfilters-devel-2.3.5-1.tar.bz2
+  /usr/src/libtalkfilters-devel-2.3.6-1.tar.bz2
+  /usr/src/libtalkfilters1-2.3.6-1.tar.bz2
+  /usr/src/talkfilters-2.3.6-1-src.tar.bz2
+  /usr/src/talkfilters-2.3.6-1.tar.bz2
 
 -------------------------------------------
 
@@ -65,12 +65,12 @@ Files included in the main package:
   /usr/bin/valspeak.exe
   /usr/bin/warez.exe
   /usr/bin/wrap.exe
-  /usr/share/doc/Cygwin/talkfilters-2.3.5.README
-  /usr/share/doc/talkfilters-2.3.5/AUTHORS
-  /usr/share/doc/talkfilters-2.3.5/COPYING
-  /usr/share/doc/talkfilters-2.3.5/ChangeLog
-  /usr/share/doc/talkfilters-2.3.5/INSTALL
-  /usr/share/doc/talkfilters-2.3.5/README
+  /usr/share/doc/Cygwin/talkfilters-2.3.6.README
+  /usr/share/doc/talkfilters-2.3.6/AUTHORS
+  /usr/share/doc/talkfilters-2.3.6/COPYING
+  /usr/share/doc/talkfilters-2.3.6/ChangeLog
+  /usr/share/doc/talkfilters-2.3.6/INSTALL
+  /usr/share/doc/talkfilters-2.3.6/README
   /usr/share/info/talkfilters.info.gz
   /usr/share/man/man1/austro.1.gz
   /usr/share/man/man1/b1ff.1.gz
@@ -93,12 +93,10 @@ Files included in the main package:
   /usr/share/man/man1/warez.1.gz
   /usr/share/man/man1/wrap.1.gz
 
-Files included in the runtime library package:
-
+(libtalkfilters1)
   /usr/bin/cygtalkfilters-1.dll
 
-Files included in the devel package:
-
+(libtalkfilters-devel)
   /usr/include/talkfilters.h
   /usr/lib/libtalkfilters.a
   /usr/lib/libtalkfilters.dll.a
@@ -108,6 +106,9 @@ Files included in the devel package:
 ------------------
 
 Port Notes:
+
+----- version 2.3.6-1 -----
+Version bump.
 
 ----- version 2.3.5-1 -----
 Version bump.
