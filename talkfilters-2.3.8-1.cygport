@@ -1,0 +1,9 @@
+DESCRIPTION="Text filters which mimic various dialects"
+HOMEPAGE="http://www.hyperrealm.com/main.php?s=talkfilters"
+SRC_URI="http://www.hyperrealm.com/${PN}/${P}.tar.gz"
+
+PKG_NAMES="${PN} lib${PN}1 lib${PN}-devel"
+PKG_HINTS='setup lib devel'
+PKG_CONTENTS[0]='etc/ usr/bin/*.exe usr/share/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]='usr/include/ usr/lib/'
