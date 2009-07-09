@@ -1,9 +1,9 @@
 DESCRIPTION="Text filters which mimic various dialects"
 HOMEPAGE="http://www.hyperrealm.com/main.php?s=talkfilters"
 SRC_URI="http://www.hyperrealm.com/${PN}/${P}.tar.gz"
+PATCH_URI="2.3.8-manpage-symlinks.patch"
 
 PKG_NAMES="${PN} lib${PN}1 lib${PN}-devel"
-PKG_HINTS='setup lib devel'
-PKG_CONTENTS[0]='etc/ usr/bin/*.exe usr/share/'
-PKG_CONTENTS[1]='usr/bin/*.dll'
-PKG_CONTENTS[2]='usr/include/ usr/lib/'
+talkfilters_CONTENTS='usr/bin/*.exe usr/share/'
+libtalkfilters1_CONTENTS='usr/bin/*-1.dll'
+libtalkfilters_devel_CONTENTS='usr/include/ usr/lib/'

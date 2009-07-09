@@ -1,4 +1,4 @@
-category: Text Libs
+category: Text
 requires: libtalkfilters1
 sdesc: "Text filters which mimic various dialects (development)"
 ldesc: "The GNU Talk Filters are filter programs that convert ordinary English

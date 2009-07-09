@@ -9,18 +9,19 @@ version of the package also provides the filters as a C library, so they
 can be easily embedded in other programs.
 
 Runtime requirements:
-  cygwin-1.5.25-7
+  cygwin-1.7.0-50
+  libgcc1-4.3.2-2
 
 Build requirements:
-  cygwin-1.5.25-7
-  autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  binutils-20060817-1
-  cygport-0.3.7-1
-  flex-2.5.33-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  make-3.81-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
+  binutils-20080624-2
+  cygport-0.9.7-1
+  flex-2.5.35-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-13
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical homepage:
@@ -43,9 +44,9 @@ This will create:
 
 -------------------------------------------
 
-Files included in the main package:
+Files included in the binary packages:
 
-  /etc/postinstall/talkfilters.sh
+(talkfilters)
   /usr/bin/austro.exe
   /usr/bin/b1ff.exe
   /usr/bin/brooklyn.exe
@@ -65,12 +66,10 @@ Files included in the main package:
   /usr/bin/valspeak.exe
   /usr/bin/warez.exe
   /usr/bin/wrap.exe
-  /usr/share/doc/Cygwin/talkfilters-2.3.8.README
-  /usr/share/doc/talkfilters-2.3.8/AUTHORS
-  /usr/share/doc/talkfilters-2.3.8/COPYING
-  /usr/share/doc/talkfilters-2.3.8/ChangeLog
-  /usr/share/doc/talkfilters-2.3.8/INSTALL
-  /usr/share/doc/talkfilters-2.3.8/README
+  /usr/share/doc/talkfilters/AUTHORS
+  /usr/share/doc/talkfilters/COPYING
+  /usr/share/doc/talkfilters/ChangeLog
+  /usr/share/doc/talkfilters/README
   /usr/share/info/talkfilters.info.gz
   /usr/share/man/man1/austro.1.gz
   /usr/share/man/man1/b1ff.1.gz
@@ -107,18 +106,8 @@ Files included in the main package:
 
 Port Notes:
 
------ version 2.3.8-1 -----
-Version bump.
-
------ version 2.3.6-1 -----
-Version bump.
-
------ version 2.3.5-1 -----
-Version bump.
-Created separate runtime library and devel packages.
-
------ version 2.3.4-1 -----
-Initial release for Cygwin.
+----- version 2.3.8-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

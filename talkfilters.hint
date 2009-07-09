@@ -1,5 +1,5 @@
 category: Text
-requires: cygwin
+requires: libgcc1
 sdesc: "Text filters which mimic various dialects"
 ldesc: "The GNU Talk Filters are filter programs that convert ordinary English
 text into text that mimics a stereotyped or otherwise humorous dialect.
